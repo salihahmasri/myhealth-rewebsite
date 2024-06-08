@@ -12,7 +12,9 @@ grid-container{
     border: 1px solid black;
     
 }
-
+background1{
+    padding: 10px;
+}
 .info{
     display: flex; 
     padding: 20px;
