@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyHealth-Homepage</title>
+    <link rel="stylesheet" href="homepage.css">
+    <script src="homepage.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav></nav>
+        <div id="head"></div>
+    </header>
+    <p>Home</p>
+    <h1>| Home</h1>
+
+    <!-- segment for the banner -->
+    <div id="banner">
+        <div class="container">
+            <div class="banner">
+                <div class="imageList">1/3</div>
+                <img src="download.jpg" alt="img1" style="width: 100%;">
+                <div class="Text">Corona Virus</div>
+            </div>
+            <div class="banner">
+                <div class="imageList">2/3</div>
+                <img src="ApplicationsinHealthcare.jpg" alt="img1" style="width: 100%;">
+                <div class="Text">Corona Virus</div>
+            </div>
+            <div class="banner">
+                <div class="imageList">3/3</div>
+                <img src="Dengue Fever.jpg" alt="img1" style="width: 100%;">
+                <div class="Text">Corona Virus</div>
+            </div>
+
+            <!-- to make a usable and interactive arrow -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <div style="text-align: center;">
+            <span class="dot" onclick="currentBanner(1)"></span>
+            <span class="dot" onclick="currentBanner(2)"></span>
+            <span class="dot" onclick="currentBanner(3)"></span>
+        </div>
+    </div>
+</body>
+</html>
