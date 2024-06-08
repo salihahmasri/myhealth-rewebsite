@@ -100,6 +100,18 @@ li{
 .p2{
     color: black;
 }
-table{
+table, th, td{
+    margin-left: auto;
+    margin-right: auto;
     justify-content: center;
+    border-collapse: collapse;
+    border: 1px solid black;
+    border-color: grey;
+    padding: 10px;
+   
+}
+.img1{
+    border-radius: 15px;
+    border: 5px solid rgb(24, 36, 70);
+    
 }
