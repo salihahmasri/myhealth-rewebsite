@@ -4,47 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyHealth-Homepage</title>
+    <!-- Link to external CSS file for styling -->
     <link rel="stylesheet" href="homepage.css">
+    <!-- Link to external JavaScript file for functionality -->
     <script src="homepage.js" defer></script>
 </head>
 <body>
     <header>
+        <!-- Navigation bar (currently empty) -->
         <nav></nav>
+        <!-- Placeholder for additional header content (e.g., logo) -->
         <div id="head"></div>
     </header>
     <p>Home</p>
     <h1>| Home</h1>
 
-    <!-- segment for the banner -->
+    <!-- Segment for the banner -->
     <div id="banner">
         <div class="container">
+            <!-- First banner image -->
             <div class="banner">
                 <div class="imageList">1/3</div>
-                <img src="download.jpg" alt="img1" style="width: 100%;">
-                <div class="Text">Corona Virus</div>
+                <img src="https://media.springernature.com/lw685/springer-static/image/chp%3A10.1007%2F978-3-030-68120-3_6/MediaObjects/500479_1_En_6_Fig3_HTML.png
+                " alt="img1" style="width: 70%;" class="centered_image">
             </div>
+            <!-- Second banner image -->
             <div class="banner">
                 <div class="imageList">2/3</div>
-                <img src="ApplicationsinHealthcare.jpg" alt="img1" style="width: 100%;">
-                <div class="Text">Corona Virus</div>
+                <img src="" 
+                alt="img1" style="width: 100%;" class="centered_image">>
             </div>
+            <!-- Third banner image -->
             <div class="banner">
                 <div class="imageList">3/3</div>
-                <img src="Dengue Fever.jpg" alt="img1" style="width: 100%;">
-                <div class="Text">Corona Virus</div>
+                <img src="Dengue Fever.jpg" alt="img1" style="width: 100%;" class="centered_image">>
             </div>
 
-            <!-- to make a usable and interactive arrow -->
+            <!-- Arrows for navigating through the banners -->
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
         <br>
 
+        <!-- Dots for indicating the current banner and for navigation -->
         <div style="text-align: center;">
             <span class="dot" onclick="currentBanner(1)"></span>
             <span class="dot" onclick="currentBanner(2)"></span>
             <span class="dot" onclick="currentBanner(3)"></span>
+            <!-- not done yet -->
         </div>
+    </div>
+
+    <div class="btnClass">
+        <button class="btn">Health Alert</button>
+        <button class="btn">Current Issue</button>
+        <button class="btn">ANMS</button>
+        </div>
+    </div>
+    <!-- the news -->
+    <div class="newsBox">
+        
     </div>
 </body>
 </html>

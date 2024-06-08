@@ -1,42 +1,79 @@
-
-#banner{
+/* Ensures that padding and border are included in the element's total width and height */
+#banner {
     box-sizing: border-box;
 }
-#head{
+
+/* Styles for the header section */
+#head {
     color: gold;
     background-color: #114B5F;
+    padding: 20px; /* Add padding for visibility */
+    text-align: center; /* Center-align text */
 }
-h1{
+
+/* Styles for the main heading */
+h1 {
     font-weight: bolder;
-    color:#114B5F ;
-    font-style: inter;
+    color: #114B5F;
+    font-family: sans-serif;
 }
-.banner.imageList{
-    display: grid;
-    grid-template-columns: repeat(10,1fr);
+
+/* Container styles to center the content and set a maximum width */
+.container {
+    max-width: 80%;
+    position: relative;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
 }
-.dot{
+
+/* Styles for the banner to center its content */
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
 }
-.imageList{
+
+/* Styles for imageList inside the banner */
+.banner .imageList {
+    display: block;
+    text-align: center;
+}
+
+/* Styles for the navigation dots */
+.dot {
+    text-align: center;
+}
+
+/* Hides the imageList and centers its content */
+.imageList {
     display: none;
     text-align: center;
 }
-img{
-    vertical-align:middle;
+
+/* Vertically aligns the image to the middle */
+img {
+    vertical-align: middle;
 }
-.container{
-    max-width: 80%;
-    position: relative;
-    margin: auto;   
+
+/* Ensures the image is centered within the banner */
+.centered-image {
+    width: 70%; /* Sets the width of the image */
+    margin: auto; /* Centers the image */
+    display: block; /* Ensures the image is a block element */
 }
-.prev,.next{
-    cursor:pointer;
+
+/* Styles for the navigation arrows */
+/* Styles for the navigation arrows */
+.prev, .next {
+    cursor: pointer;
     position: absolute;
-    top: 50%;
+    top: 50%; /* Centers the arrows vertically */
     width: auto;
-    padding:16px ;
-    margin-top: -22px;
+    padding: 16px;
     color: black;
     font-weight: bold;
     font-size: 18px;
@@ -44,10 +81,48 @@ img{
     border-radius: 0 3px 3px 0;
     user-select: none;
 }
-.next{
-    right: 0;
+
+/* Styles specifically for the next arrow */
+.next {
+    right: 0; /* Positions the next arrow to the right */
     border-radius: 3px 0 0 3px;
 }
-.prev:hover,.next:hover{
-    background-color:white
+
+/* Positioning the arrows */
+.prev {
+    left: 0; /* Positions the previous arrow to the left */
+}
+
+/* Ensuring arrows are vertically centered */
+.prev, .next {
+    transform: translateY(-50%);
+}
+
+
+/* Hover effect for the navigation arrows */
+.prev:hover, .next:hover {
+    background-color: white;
+}
+
+/* // news segment */
+
+.btnClass{
+    justify-content: center; /* Center the items horizontally */
+    display: flex; /* Make the container a flex container */
+}
+.btnClass .btn{
+    margin: 15px;
+    background-color:#93BAAC ;
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+}
+
+.newsBox{
+    margin: 0 auto;
+    width: 70%;
+    background-color:#93BAAC ;
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
 }
