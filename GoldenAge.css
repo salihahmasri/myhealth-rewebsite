@@ -1,0 +1,51 @@
+#def-container{
+    /* make container center */
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+body{
+    margin-left: 30px;
+}
+/* make text center */
+#def-container #definition{
+    margin: auto;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+/* Styles for the main heading */
+h1 {
+    font-weight: bolder;
+    color: #114B5F;
+    font-family: sans-serif;
+}
+
+/* color of fonts */
+#container{
+    color: white; 
+    font-family: sans-serif;
+}
+/* for same formnat of all 5 container */
+#container .innerContainer{
+    /* making it coloures and round in edges */
+    background-color: #114B5F;
+    border-radius: 20px; 
+    /* make the container fit in with  the content */
+    display:inline-block;
+    /* gap between every container */
+    margin: 10px 20px 20px 10px;
+
+    
+}
+
+#container .innerContainer .content{
+    /* gap the end of the container and content */
+    margin-left: 20px;
+    margin-right: 5px;
+}
+
+.subtopic{
+    font-weight: bold;
+}
