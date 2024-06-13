@@ -31,19 +31,18 @@ h1 {
 
 /* Styles for the banner to center its content */
 .banner {
-    display: flex;
+    display: flex; 
+    /* make it vertical */
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
 
-/* Styles for imageList inside the banner */
 .banner .imageList {
     display: block;
     text-align: center;
 }
 
-/* Styles for the navigation dots */
 .dot {
     text-align: center;
 }
@@ -62,11 +61,10 @@ img {
 /* Ensures the image is centered within the banner */
 .centered-image {
     width: 70%; /* Sets the width of the image */
-    margin: auto; /* Centers the image */
+    margin: auto; 
     display: block; /* Ensures the image is a block element */
 }
 
-/* Styles for the navigation arrows */
 /* Styles for the navigation arrows */
 .prev, .next {
     cursor: pointer;
