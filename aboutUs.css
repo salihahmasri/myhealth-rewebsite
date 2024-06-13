@@ -22,6 +22,16 @@ background1{
     
 
 }
+.rectangle{
+    background: #ddd;
+    width: 170px;
+    height: 100px;
+    margin: 5px;
+    padding: 40px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
 .btn{
     border-top: 1px solid #abbbcc;
@@ -37,25 +47,7 @@ background1{
     left: 5 px;
    
 }
-.btn2{
-    border-top: 1px solid #abbbcc;
-    border-left: 1px solid #a7b6c7;
-    border-bottom: 1px solid #a1afbf;
-    border-right: 1px solid #a7b6c7;
-    border-radius: 0;
-    width: 200px;
-    height: 155px;
-    padding-right: 20px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    left: 5 px;
-   
-}
-.slideshow-1{
-    justify-content: center;
-    text-align: center;
 
-}
 .background{
     padding: 20px;
 }
@@ -76,4 +68,76 @@ background1{
     flex-wrap: wrap;
     text-align: center;
     
+}
+
+.container {
+    max-width: 80%;
+    position: relative;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.slideshow-1 {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+}
+.slide-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.mySlide {
+    min-width: 20%; /* Each slide takes 20% of the container width */
+    box-sizing: border-box;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%; /* Centers the arrows vertically */
+    width: auto;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0; /* Positions the next arrow to the right */
+    border-radius: 3px 0 0 3px;
+}
+
+/* Positioning the arrows */
+.prev {
+    left: 0; /* Positions the previous arrow to the left */
+}
+
+/* Ensuring arrows are vertically centered */
+.prev, .next {
+    transform: translateY(-50%);
+}
+
+
+/* Hover effect for the navigation arrows */
+.prev:hover, .next:hover {
+    background-color: white;
+}
+
+.dot {
+    text-align: center;
+}
+
+
+.active {
+    background-color: #717171;
+}
+.slide{
+    display: flex;
 }
