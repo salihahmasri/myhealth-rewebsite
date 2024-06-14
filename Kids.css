@@ -1,104 +1,30 @@
 .intro{
-    /* display: flex; 
-    padding: 10px;
-    row-gap: 50px;
-    font-size: medium;
-    justify-content: center; */
     display: grid;
-    grid-template-areas: 
-    'main main main  gap  right right'
-    'info info info  info info info ';
-    padding: 70px;
-    grid-column-gap: 15px; 
-    
+   grid-template-columns: auto auto;
+   row-gap: 15px;
+   column-gap: 15px;
 }
-.rectangle1{
+.box{
     border-radius: 15px;
-    width:500px;
+    width:900;
+    height:350px;
+    gap: 15px;
+    background-color: #114B5F;
+}
+.img1{
+    border-radius: 15px;
+    width: 600px;
+    height: 350px;
+    gap: 15px;
+    background-color: #114B5F;
+}
+.box2{
+    border-radius: 15px;
+    width:auto;
     height:300px;
+    gap: 15px;
     background-color: #114B5F;
-    justify-content: center;
-    align-items: center;
-}
-h2{
-    text-align: center;
-    align-items: center;
-    padding: 1px;
-}
-.rectangle2{
-    border-radius: 15px;
-    width:500px;
-    height:200px;
-    background-color: #114B5F;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-.info1{
-    background-color: white;
-    width:500px;
-    height:120px;
-
-}
-.rectangle3{
-    border-radius: 15px;
-    width:500px;
-    height:250px;
-    background-color: #114B5F;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-.rectangle4{
-    border-radius: 15px;
-    width:1000px;
-    height:250px;
-    background-color: #114B5F;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-.rectangle5{
-    border-radius: 15px;
-    width:1000px;
-    height:150px;
-    background-color: #114B5F;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-.rectangle6{
-    border-radius: 15px;
-    width:1000px;
-    height:200px;
-    background-color: #114B5F;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-.rectangle7{
-    border-radius: 15px;
-    width:1000px;
-    height:250px;
-    background-color: #114B5F;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-.info2{
-    padding: 100px;
-}
-h2{
-    color: white;
-}
-p{
-    color: white;
-}
-li{
-    color: white;
-}
-.p2{
-    color: black;
+    
 }
 table, th, td{
     margin-left: auto;
@@ -110,8 +36,16 @@ table, th, td{
     padding: 10px;
    
 }
-.img1{
+p{
+    text-align: center;
+}
+h2{
+    text-align: center;
+    padding: 20px;
+}
+.box3{
+    width: auto;
+    height: 450px;
+    background-color: #114B5F;
     border-radius: 15px;
-    border: 5px solid rgb(24, 36, 70);
-    
 }
