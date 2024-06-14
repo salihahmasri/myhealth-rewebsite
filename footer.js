@@ -1,50 +1,38 @@
-let slideIndex = 0;
-const slidesToShow = 5;
-
-function showSlides() {
-    const slides = document.querySelectorAll('.mySlide');
-    const dots = document.querySelectorAll('.dot');
-
-    // Hide all slides
-    slides.forEach(slide => {
-        slide.style.display = 'none';
-    });
-
-    // Remove active class from dots
-    dots.forEach(dot => {
-        dot.classList.remove('active');
-    });
-
-    // Show the correct slides
-    for (let i = 0; i < slidesToShow; i++) {
-        let index = (slideIndex + i) % slides.length;
-        slides[index].style.display = 'block';
-    }
-
-    // Add active class to the current dot
-    dots[slideIndex].classList.add('active');
-}
+let slideIndex = 5;
+showSlides(slideIndex);
 
 function plusSlides(n) {
-    const slides = document.querySelectorAll('.mySlide');
-    slideIndex += n;
-
-    // Cycle back to the beginning or end if needed
-    if (slideIndex >= slides.length) {
-        slideIndex = 0;
-    } else if (slideIndex < 0) {
-        slideIndex = slides.length - slidesToShow;
-    }
-
-    showSlides();
+  showSlides(slideIndex += n);
 }
 
 function currentSlide(n) {
-    slideIndex = n;
-    showSlides();
+  showSlides(slideIndex = n);
 }
 
-// Initialize the slides
-document.addEventListener('DOMContentLoaded', () => {
-    showSlides();
-});
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlide");
+  let dots = document.getElementsByClassName("dot");
+  let slidesPerView = 5; // Set the number of slides to display at a time
+  
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  
+  // Display the current slide and the next 4 slides
+  for (i = slideIndex - 1; i < slideIndex + slidesPerView - 1 && i < slides.length; i++) {
+    slides[i].style.display = "inline-block";
+  }
+  
+  // Activate the corresponding dots
+  for (i = slideIndex - 1; i < slideIndex + slidesPerView - 1 && i < dots.length; i++) {
+    dots[i].className += " active";
+  }
+}
