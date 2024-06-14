@@ -36,3 +36,4 @@ function showSlides(n) {
     dots[i].className += " active";
   }
 }
+mnpk
