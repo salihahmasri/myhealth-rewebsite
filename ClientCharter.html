@@ -3,54 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MyHealth-Client Charter</title>
+    <title>Client's Charter</title>
     <link rel="stylesheet" href="ClientCharter.css">
 </head>
 <body>
     <header>
-        <!-- Navigation bar (currently empty) -->
-        <nav></nav>
-        <!-- Placeholder for additional header content (e.g., logo) -->
-        <div id="head"></div>
+        <div class="container">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Charter</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Site Map</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
     </header>
     <p>Home / Client Charter</p>
     <h1>| CLIENT CHARTER</h1>
-    
-    <h2>CUSTOMER CHARTER</h2>
 
-    <!-- table for customer charter -->
-    <table id="cust">
-        <tr>
-            <td id="table1">Providing online services without interference with the downtime of less than 5%.</td>
-            <td id="table2">All questions submitted via the Ask The Experts services will be answered not exceeding 14 days during working hours.</td>
-        </tr>
-    </table>
+    <div class="container">
+        <div class="charter">
+            <h2>Customer's Charter</h2>
+            <table>
+                <!-- table the cust charter -->
+                <tr>
+                    <td>Providing online services without interference with the downtime of less than 3%.</td>
+                    <td>All questions submitted via the Ask The Experts services will be answered and consulting 14 days during working days</td>
+                </tr>
+            </table>
+        </div>
 
-    <div id="container">
-        <div id="client2022">
-            <!-- seperate the container for segement and its content -->
-             <div class="title">
-                <p>CLIENT CHARTER 2022</p>
-                <button>rawr</button>
-             </div>
-            <div class="matter">
+        <div class="section">
+            <!-- when button click -->
+            <button onclick="toggleSection('charter2022')">CLIENT'S CHARTER 2022 +</button>
+            <div id="charter2022" class="content">
+                <!-- content of 2022 -->
                 <table>
-                    <!-- table for clientcharter -->
-                    <tr>
-                        <!-- to exclude size of first td -->
-                        <td class="month">JAN</td>
-                        <td>Online services run smoothly throughout the month of January with a downtime rate of less than 5%.</td>
-                        <td>A total of 97 questions asked by experts in January can be answered within 14 working days.</td>
-                    </tr>
-                    <tr>
-                        <td class="month">FEB</td>
-                        <td>Online services run smoothly throughout the month of February with a downtime rate of less than 5%.</td>
-                        <td>A total of 107 questions asked by experts in January can be answered within 14 working days.</td>
-                    </tr>
+                    <tr><td>January</td><td>Online services were smooth throughout January with a record of less than 7% of loss time.</td><td> A total of 97 questions asked by experts in January was answered within 14 working days.</td></tr>
+                    <tr><td>February</td><td>Online services were smooth throughout February with a record of less than 8% of loss time.</td><td>A total of 97 questions asked by experts in February was answered within 14 working days.</td></tr>
+                </table>
+            </div>
+        </div>
+        
+        <div class="section">
+            <!-- when button click show the block -->
+            <button onclick="toggleSection('charter2021')">CLIENT'S CHARTER 2021 +</button>
+            <div id="charter2021" class="content">
+                <table>
+                    <tr><td>January</td><td>Online services were smooth throughout January with a record of less than 5% of loss time.</td><td> A total of 97 questions asked by experts in January was answered within 14 working days.</td></tr>
+                    <tr><td>February</td><td>Online services were smooth throughout February with a record of less than 5% of loss time. </td><td>A total of 97 questions asked by experts in February was answered within 14 working days.</td></tr>
+                </table>
+            </div>
+        </div>
+        
+        <div class="section">
+            <button onclick="toggleSection('charter2012')">CLIENT'S CHARTER 2012 +</button>
+            <div id="charter2012" class="content">
+                <table>
+                    <tr><td>January</td><td>Online services were smooth throughout January with a record of less than 5% of loss time.</td><td> A total of 97 questions asked by experts in January was answered within 14 working days.</td></tr>
+                    <tr><td>February</td><td>Online services were smooth throughout February with a record of less than 5% of loss time. </td><td>A total of 97 questions asked by experts in February was answered within 14 working days.</td></tr>
                 </table>
             </div>
         </div>
     </div>
 
+    <!-- link to be reactive -->
+    <script src="ClientCharter.js"></script>
 </body>
 </html>
