@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Client's Charter</title>
-    <link rel="stylesheet" href="ClientCharter.css">
+    <title>MYHEALTH KEMENTERIAN KESIHATAN MALAYSIA</title>
+    <link rel="stylesheet" href="HomePage.css">
 </head>
 <body>
     <!-- start of header with navigation -->
     <nav>
         <ul>
             <img src="Images/sidebarbutton.png" alt="sidebarmockup" class="sidebarbutton">
-            <li><a href="HomePage.html">Home</a></li>
-            <li><a href="aboutUs.html">About Us</a></li>
-            <li><a href="ClientCharter.html">Client's Charter</a></li>
-            <li><a href="HealthFAQ.html">Health FAQ</a></li>
-            <li><a href="#">Site Map</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="HomePage.html">UTAMA</a></li>
+            <li><a href="aboutUs.html">BERKENAAN KAMI</a></li>
+            <li><a href="ClientCharter.html">PIAGAM PELANGGAN</a></li>
+            <li><a href="HealthFAQ.html">SOALAN RUTIN</a></li>
+            <li><a href="#">PETA LAMAN</a></li>
+            <li><a href="#">HUBUNGI KAMI</a></li>
         </ul>
         <!-- Appearance and language appearance -->
         <div class="appearance">
@@ -42,64 +42,124 @@
             <img src="/Images/Jata negara.png" alt="Jata Negara">
             <img src="/Images/myHealth.png" alt="MyHealth">
             <div class="header-title">
-                <h1 class="thin-text">Welcome to Official Portal</h1>
+                <h1 class="thin-text">SELAMAT DATANG KE PORTAL RASMI</h1>
                 <h1 class="bold-text">MYHEALTH MINISTRY OF HEALTH MALAYSIA</h1>
             </div>
             <input class="search" type="text" placeholder="Search in the portal...">
         </div>
     </header>
     <!-- End of header --> 
-    <p>Home / Client Charter</p>
-    <h1>| CLIENT CHARTER</h1>
-
+     
     <div class="container">
-        <div class="charter">
-            <h2>Customer's Charter</h2>
-            <table>
-                <!-- table the cust charter -->
-                <tr>
-                    <td>Providing online services without interference with the downtime of less than 3%.</td>
-                    <td>All questions submitted via the Ask The Experts services will be answered and consulting 14 days during working days</td>
-                </tr>
-            </table>
+        <p>Home</p>
+        <h1>|Home</h1>
+        <div class="slider">
+            <img src="https://www.nea.gov.sg/images/default-source/default-album/fy21/default-album/nea-004-t21a-comms-banner_12ftw-x-4fth-r10_path-for-printing-01.jpg" alt="Slide 1" class="sld active">
+            <img src="https://www.shutterstock.com/image-vector/world-aids-day-banner-december-260nw-2069262977.jpg" alt="Slide 2" class="sld">
+            <img src="https://www.linnsheriff.org/wp-content/uploads/COVID-19-resize-banner.jpg" alt="Slide 3" class="sld">
+            <div class="sld-nav">
+                <!-- make the dot can manually and auto slide -->
+                <span class="dot active" onclick="showSlide(0)"></span>
+                <span class="dot" onclick="showSlide(1)"></span>
+                <span class="dot" onclick="showSlide(2)"></span>
+            </div>
         </div>
 
-        <div class="section">
-            <!-- when button click -->
-            <button onclick="toggleSection('charter2022')">CLIENT'S CHARTER 2022 +</button>
-            <div id="charter2022" class="content">
-                <!-- content of 2022 -->
-                <table>
-                    <tr><td>January</td><td>Online services were smooth throughout January with a record of less than 7% of loss time.</td><td> A total of 97 questions asked by experts in January was answered within 14 working days.</td></tr>
-                    <tr><td>February</td><td>Online services were smooth throughout February with a record of less than 8% of loss time.</td><td>A total of 97 questions asked by experts in February was answered within 14 working days.</td></tr>
-                </table>
+        <div class="btns">
+            <!-- button for news segment -->
+            <button onclick="showSegment('alert')" class="active">ISU KESIHATAN</button>
+            <button onclick="showSegment('issue')">ISU SEMASA</button>
+            <button onclick="showSegment('anms')">ANMS</button>
+        </div>
+
+        <!-- segment for news-->
+         <!-- alert is default -->
+        <div id="alert" class="news active">
+            <h2>ISU KESIHATAN</h2>
+            <p>Artikel di sini ...</p>
+        </div>
+        <div id="issue" class="news">
+            <h2>SITUASI SEMASA</h2>
+            <p>Artikel di sini ...</p>
+        </div>
+        <div id="anms" class="news">
+            <h2>ANMS</h2>
+            <p>ANMS artikel ...</p>
+        </div>
+
+        <div id="media" >
+            <div id="titlemedia">
+                <h2>MEDIA</h2>
+                <div id="underline"></div>
+            </div>
+
+            <div id="content">
+                <a href="media.html" class="media-link">
+                    <div class="media-item">
+                        <img src="/Images/Play Property.png" alt="Animation">
+                        <p>Animasi</p>
+                    </div>
+                </a>
+                <a href="media.html" class="media-link">
+                    <div class="media-item">
+                        <img src="Images/Audio Wave.png" alt="Audio">
+                        <p>Audio</p>
+                    </div>
+                </a>
+                <a href="media.html" class="media-link">
+                    <div class="media-item">
+                        <img src="Images/Next.png" alt="Video">
+                        <p>Video</p>
+                    </div>
+                </a>
+                <a href="media.html" class="media-link">
+                    <div class="media-item">
+                        <img src="/Images/Paintbrush.png" alt="Illustration">
+                        <p>Ilustrasi</p>
+                    </div>
+                </a>
+                <a href="media.html" class="media-link">
+                    <div class="media-item">
+                        <img src="/Images/Bookmark.png" alt="E-Magazine">
+                        <p>E-Majalah</p>
+                    </div>
+                </a>
             </div>
         </div>
-        
-        <div class="section">
-            <!-- when button click show the block -->
-            <button onclick="toggleSection('charter2021')">CLIENT'S CHARTER 2021 +</button>
-            <div id="charter2021" class="content">
-                <table>
-                    <tr><td>January</td><td>Online services were smooth throughout January with a record of less than 5% of loss time.</td><td> A total of 97 questions asked by experts in January was answered within 14 working days.</td></tr>
-                    <tr><td>February</td><td>Online services were smooth throughout February with a record of less than 5% of loss time. </td><td>A total of 97 questions asked by experts in February was answered within 14 working days.</td></tr>
-                </table>
-            </div>
-        </div>
-        
-        <div class="section">
-            <button onclick="toggleSection('charter2012')">CLIENT'S CHARTER 2012 +</button>
-            <div id="charter2012" class="content">
-                <table>
-                    <tr><td>January</td><td>Online services were smooth throughout January with a record of less than 5% of loss time.</td><td> A total of 97 questions asked by experts in January was answered within 14 working days.</td></tr>
-                    <tr><td>February</td><td>Online services were smooth throughout February with a record of less than 5% of loss time. </td><td>A total of 97 questions asked by experts in February was answered within 14 working days.</td></tr>
-                </table>
-            </div>
-        </div>
+       <div id="social">
+            
+            <a href="media.html" class="social-link">
+                <div class="social-item">
+                    <p>Facebok MyHealth</p>
+                    <img src="/Images/Rectangle 93.png" alt="E-Magazine">
+                </div>
+            </a>
+            
+            <a href="media.html" class="social-link">
+                <div class="social-item">
+                    <p>X MyHealth</p>
+                    <img src="/Images/Rectangle 90.png" alt="E-Magazine">
+                </div>
+            </a>
+            
+            <a href="media.html" class="social-link">
+                <div class="social-item">
+                    <p>Instagram MyHealth</p>
+                    <img src="/Images/Rectangle 92.png" alt="E-Magazine">
+                </div>
+            </a>
+            
+            <a href="media.html" class="social-link">
+                <div class="social-item">
+                    <p>Tiktok MyHealth</p>
+                    <img src="/Images/Rectangle 91.png" alt="E-Magazine">
+                </div>
+            </a>
+       </div>
+
     </div>
 
-    <!-- link to be reactive -->
-    <script src="ClientCharter.js"></script>
+    <script src="HomePage.js"></script>
 
     <!-- footer -->
     <footer>
