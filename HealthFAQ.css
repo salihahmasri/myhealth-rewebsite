@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #007a87;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    height: 50px;
+}
+
+header h1 {
+    flex-grow: 1;
+    margin: 0;
+    padding-left: 20px;
+}
+
+header input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+nav {
+    background-color: #003d4d;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.language-selector {
+    display: flex;
+    align-items: center;
+}
+
+.language-selector .language {
+    margin-right: 10px;
+}
+
+.color-options {
+    display: flex;
+}
+
+.color-options .color-box {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+main {
+    padding: 20px;
+}
+
+.faq-section {
+    text-align: center;
+}
+
+.faq-section h2 {
+    margin-bottom: 20px;
+}
+
+.faq-section p {
+    margin-bottom: 10px;
+}
+
+.faq-categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.category {
+    background-color: #005f73;
+    color: white;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    width: 250px;
+}
+
+.category h3 {
+    margin-top: 0;
+}
+
+.category ul {
+    list-style: none;
+    padding: 0;
+}
+
+.category ul li {
+    text-align: left;
+    padding: 5px 0;
+}
+
+footer {
+    background-color: #003d4d;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-logos img, .footer-social img {
+    height: 40px;
+    margin: 10px;
+}
