@@ -79,15 +79,14 @@ nav ul li a {
     padding-right: 10px;
 }
 
-.language{
+.language {
     padding: 10px;
     border-radius: 11px;
     background-color: #114B5F;
     margin-left: 10px;
-
 }
 
-.language img{
+.language img {
     width: 20px;
     height: 20px;
     cursor: pointer;
@@ -106,12 +105,12 @@ nav ul li a {
     display: flex;
 }
 
-.font-options { 
+.font-options {
     margin-left: 10px;
     cursor: pointer;
 }
 
-.color-options .color-box{
+.color-options .color-box {
     width: 20px;
     height: 20px;
     margin-left: 5px;
@@ -125,10 +124,35 @@ main {
 }
 
 .archive-section {
-    text-align: center;
+    text-align: left;
 }
 
-.archive-section h2 {
+.page-title {
+    display: flex;
+}
+
+.rectangle {
+    width: 10px;
+    height: 85px;
+    background-color: #114B5F;
+    margin-right: 10px;
+}
+
+.page-directory h2 {
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.page-title h2 {
+    color: #114B5F;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.search-section {
+    display: flex;
+    justify-content: flex-end; /* Align items to the left */
+    align-items: center; /* Vertically center the items */
     margin-bottom: 20px;
 }
 
