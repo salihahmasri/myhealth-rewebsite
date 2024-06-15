@@ -1,9 +1,4 @@
-grid-container{
-    /* display: flex;
-    background-color: #114B5F;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 50px;
-    padding: 20px; */
+.grid-container{
     position: absolute;
     left: 0px;
     top: 398px;
@@ -12,7 +7,7 @@ grid-container{
     border: 1px solid black;
     
 }
-background1{
+.background1{
     padding: 10px;
 }
 .info{
@@ -23,14 +18,15 @@ background1{
 
 }
 .rectangle{
-    background: #ddd;
-    width: 170px;
-    height: 100px;
+    background: white;
+    width: 200px;
+    height: 150px;
     margin: 5px;
     padding: 40px;
     text-align: center;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px #114B5F;
+    border-color: black ;
 }
 
 .btn{
@@ -70,78 +66,54 @@ background1{
     
 }
 
-.container {
-    max-width: 80%;
-    position: relative;
-    margin: auto;
+.slider-wrap {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    margin-bottom: 40px;
-    
-}
-.slideshow-1 {
-    position: relative;
-    width: 100%;
-    max-width: 600px;
-    margin: auto;
-    overflow: hidden;
-}
-.slide-track {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
+    justify-content: center;
+    /* margin: 10% auto; */
 }
 
-.mySlide {
-    min-width: 20%; /* Each slide takes 20% of the container width */
-    box-sizing: border-box;
+.slider {
+    width: 1000px;
+    display: flex;
+    overflow-x: scroll;
 }
-.prev, .next {
+.slider div{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-gap: 20px;
+    padding: 10px;
+    flex: none;
+}
+.slider div .rectangle{
+    filter: grayscale(100%);
+    transition: transform 0.5s;
+}
+.slider::-webkit-scrollbar{
+    display: none;
+}
+.prev, .next{
+    width: 50px;
     cursor: pointer;
-    position: absolute;
-    top: 50%; /* Centers the arrows vertically */
-    width: auto;
-    padding: 16px;
-    color: black;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
+    margin: 40px;
 }
 
-.next {
-    right: 0; /* Positions the next arrow to the right */
-    border-radius: 3px 0 0 3px;
-}
+.slider div .rectangle:hover{
+    filter: grayscale(0);
+    cursor: pointer;
+    transform: scale(1.1);
 
-/* Positioning the arrows */
-.prev {
-    left: 0; /* Positions the previous arrow to the left */
-}
-
-/* Ensuring arrows are vertically centered */
-.prev, .next {
-    transform: translateY(-50%);
-}
-
-
-/* Hover effect for the navigation arrows */
-.prev:hover, .next:hover {
-    background-color: white;
-}
-
-.dot {
-    text-align: center;
-}
-
-
-.active {
-    background-color: #717171;
-}
-.slide{
-    display: flex;
 }
 .address{
     background-color: #114B5F;
+    width: auto;
+}
+.imgfooter{
+    width: 100px;
+    height: 100px;
+    
+
+}
+h4{
+    text-align: center;
 }
