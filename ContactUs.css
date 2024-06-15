@@ -129,10 +129,29 @@ main {
     text-align: left;
 }
 
-.contact-section h2 {
-    margin-bottom: 20px;
+
+.page-title {
+    display: flex;
 }
 
+.rectangle{
+    width: 10px;
+    height: 85px;
+    background-color: #114B5F;
+    margin-right: 10px;
+}
+
+
+.page-directory h2{
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.page-title h2{
+    color: #114B5F;
+    font-weight: 700;
+    font-size: 2rem;
+}
 .contact-section p {
     margin-bottom: 10px;
 }
@@ -147,12 +166,12 @@ main {
 .contact-info .map {
     flex: 1;
     text-align: left;
-    padding-right: 20px;
+    gap: 10px;
 }
 
 .contact-info .map img {
     width: 100%;
-    max-width: 400px;
+    max-width: 100px;
     height: auto;
 }
 
