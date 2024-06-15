@@ -78,6 +78,7 @@ background1{
     flex-direction: column;
     align-items: center;
     margin-bottom: 40px;
+    
 }
 .slideshow-1 {
     position: relative;
@@ -140,4 +141,7 @@ background1{
 }
 .slide{
     display: flex;
+}
+.address{
+    background-color: #114B5F;
 }
