@@ -172,6 +172,19 @@ nav ul li a {
     
 }
 /* footer start */
+.article-1{
+    background-color: #114B5F;
+    text-align: center;
+}
+.article-2{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    
+}
 .slider-wrap {
     display: flex;
     align-items: center;
