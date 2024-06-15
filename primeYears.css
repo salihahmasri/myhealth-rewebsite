@@ -11,6 +11,12 @@ body {
     display: flex;
     align-items: center;
 }
+.rectangle1{
+    width: 10px;
+    height: 85px;
+    background-color: #114B5F;
+    margin-right: 10px;
+}
 
 /* Adjusting jata negara and my health image */
 .header-content img {
@@ -130,6 +136,7 @@ nav ul li a {
     height:300px;
     gap: 15px;
     background-color: #114B5F;
+    color: white;
 }
 h2{
     text-align: center;
@@ -146,6 +153,7 @@ p{
     height:300px;
     gap: 15px;
     background-color: #114B5F;
+    color: white;
 }
 table, th, td{
     margin-left: auto;
