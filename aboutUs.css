@@ -1,3 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*start of header styling*/
+.header-content {
+    background-color: #A7C4CE;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+/* Adjusting jata negara and my health image */
+.header-content img {
+    height: 110px;
+    width: 120px;
+}
+
+/* Adjusting text  */
+.header-title {
+    color: #114B5F;
+    margin: 0;
+    padding-left: 20px;
+    flex-grow: 1;
+}
+
+.header-title h1 {
+    margin: 1px 0;
+}
+
+.header-title .thin-text {
+    font-weight: 300;
+    font-size: 1rem; /* 2 times smaller than the default 2rem */
+}
+
+.header-title .bold-text {
+    font-weight: 700;
+    font-size: 2rem; /* Default size */
+}
+
+header input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-left: auto;
+}
+
+nav {
+    background-color: #007a87;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.sidebarbutton {
+    height: 16px;
+    width: 25px;
+    padding-left: 5px;
+    padding-right: 10px;
+}
+
+.language{
+    padding: 10px;
+    border-radius: 11px;
+    background-color: #114B5F;
+    margin-left: 10px;
+
+}
+
+.language img{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.appearance {
+    display: flex;
+    align-items: center;
+}
+
+.appearance .language {
+    margin-right: 10px;
+}
+
+.color-options {
+    display: flex;
+}
+
+.font-options { 
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.color-options .color-box{
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
 .grid-container{
     position: absolute;
     left: 0px;
@@ -7,9 +127,7 @@
     border: 1px solid black;
     
 }
-.background1{
-    padding: 10px;
-}
+
 .info{
     display: flex; 
     padding: 20px;
@@ -17,18 +135,6 @@
     
 
 }
-.rectangle{
-    background: white;
-    width: 200px;
-    height: 150px;
-    margin: 5px;
-    padding: 40px;
-    text-align: center;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px #114B5F;
-    border-color: black ;
-}
-
 .btn{
     border-top: 1px solid #abbbcc;
     border-left: 1px solid #a7b6c7;
@@ -65,7 +171,7 @@
     text-align: center;
     
 }
-
+/* footer start */
 .slider-wrap {
     display: flex;
     align-items: center;
@@ -77,13 +183,6 @@
     width: 1000px;
     display: flex;
     overflow-x: scroll;
-}
-.slider div{
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
-    grid-gap: 20px;
-    padding: 10px;
-    flex: none;
 }
 .slider div .rectangle{
     filter: grayscale(100%);
@@ -102,18 +201,48 @@
     filter: grayscale(0);
     cursor: pointer;
     transform: scale(1.1);
-
 }
 .address{
-    background-color: #114B5F;
+    background-color:  #007a87;
     width: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    padding: 15px;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
 }
 .imgfooter{
-    width: 100px;
+    width: 150px;
     height: 100px;
-    
-
 }
 h4{
     text-align: center;
 }
+.rectangle{
+    background: white;
+    width: 350px;
+    height: 150px;
+    margin: 5px;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 4px 8px #114B5F;
+    border-color: black ;
+}
+#content{
+    color: white;
+}
+.logo{
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+}
+.socmed{
+    width: 50px;
+    height: 35px;
+}
+#addinfo{
+    text-align: justify;
+}
+/* end footer */
