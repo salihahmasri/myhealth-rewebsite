@@ -250,6 +250,7 @@ h4{
 }
 /* end footer */
 /* sidebar */
+
 .siderbar{
     position: relative;
     display: inline-block;
@@ -270,12 +271,14 @@ h4{
 .sidebar-content a:hover{
     background-color: #A7C4CE;
 }
+/* want to display the content of sidebar in block */
 .sidebar:hover .sidebar-content{
     display: block;
 }
 .sidebar:hover .sidebarbutton{
     background-color: #007a87;
 }
+/* sizing for sidebar */
 .sidebarbutton {
     height: 16px;
     width: 25px;

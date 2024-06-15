@@ -71,14 +71,6 @@ nav ul li a {
     color: white;
     text-decoration: none;
 }
-
-.sidebarbutton {
-    height: 16px;
-    width: 25px;
-    padding-left: 5px;
-    padding-right: 10px;
-}
-
 .language{
     padding: 10px;
     border-radius: 11px;
@@ -198,7 +190,7 @@ h2{
     justify-content: center;
     /* margin: 10% auto; */
 }
-
+/* to the the scrollbar */
 .slider {
     width: 1000px;
     display: flex;
@@ -267,4 +259,39 @@ h4{
     text-align: justify;
 }
 /* end footer */
+.siderbar{
+    position: relative;
+    display: inline-block;
+}
+/* the width for the content is 160px */
+.sidebar-content{
+    display: none;
+    position: absolute;
+    background-color:#007a87 ;
+    min-width: 160px; 
+    z-index: 1;
+}
+.sidebar-content a{
+    color: black;
+    padding :12px 16px; ;
+    text-decoration: none;
+    display: block;
+}
+.sidebar-content a:hover{
+    background-color: #A7C4CE;
+}
+.sidebar:hover .sidebar-content{
+    display: block;
+}
+/* when the user want to click the content the color will change */
+.sidebar:hover .sidebarbutton{
+    background-color: #007a87;
+}
+.sidebarbutton {
+    height: 16px;
+    width: 25px;
+    padding-left: 5px;
+    padding-right: 10px;
+}
+/* sidebar end */
 
