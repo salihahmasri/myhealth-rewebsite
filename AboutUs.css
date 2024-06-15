@@ -1,9 +1,124 @@
-grid-container{
-    /* display: flex;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*start of header styling*/
+.header-content {
+    background-color: #A7C4CE;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+/* Adjusting jata negara and my health image */
+.header-content img {
+    height: 110px;
+    width: 120px;
+}
+
+/* Adjusting text  */
+.header-title {
+    color: #114B5F;
+    margin: 0;
+    padding-left: 20px;
+    flex-grow: 1;
+}
+
+.header-title h1 {
+    margin: 1px 0;
+}
+
+.header-title .thin-text {
+    font-weight: 300;
+    font-size: 1rem; /* 2 times smaller than the default 2rem */
+}
+
+.header-title .bold-text {
+    font-weight: 700;
+    font-size: 2rem; /* Default size */
+}
+
+header input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-left: auto;
+}
+
+nav {
+    background-color: #007a87;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.sidebarbutton {
+    height: 16px;
+    width: 25px;
+    padding-left: 5px;
+    padding-right: 10px;
+}
+
+.language{
+    padding: 10px;
+    border-radius: 11px;
     background-color: #114B5F;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 50px;
-    padding: 20px; */
+    margin-left: 10px;
+
+}
+
+.language img{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.appearance {
+    display: flex;
+    align-items: center;
+}
+
+.appearance .language {
+    margin-right: 10px;
+}
+
+.color-options {
+    display: flex;
+}
+
+.font-options { 
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.color-options .color-box{
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.grid-container{
     position: absolute;
     left: 0px;
     top: 398px;
@@ -12,9 +127,7 @@ grid-container{
     border: 1px solid black;
     
 }
-background1{
-    padding: 10px;
-}
+
 .info{
     display: flex; 
     padding: 20px;
@@ -22,17 +135,6 @@ background1{
     
 
 }
-.rectangle{
-    background: #ddd;
-    width: 170px;
-    height: 100px;
-    margin: 5px;
-    padding: 40px;
-    text-align: center;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
 .btn{
     border-top: 1px solid #abbbcc;
     border-left: 1px solid #a7b6c7;
@@ -69,75 +171,78 @@ background1{
     text-align: center;
     
 }
-
-.container {
-    max-width: 80%;
-    position: relative;
-    margin: auto;
+/* footer start */
+.slider-wrap {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    margin-bottom: 40px;
+    justify-content: center;
+    /* margin: 10% auto; */
 }
-.slideshow-1 {
-    position: relative;
-    width: 100%;
-    max-width: 600px;
-    margin: auto;
-    overflow: hidden;
-}
-.slide-track {
+
+.slider {
+    width: 1000px;
     display: flex;
-    transition: transform 0.5s ease-in-out;
+    overflow-x: scroll;
 }
-
-.mySlide {
-    min-width: 20%; /* Each slide takes 20% of the container width */
-    box-sizing: border-box;
+.slider div .rectangle{
+    filter: grayscale(100%);
+    transition: transform 0.5s;
 }
-.prev, .next {
+.slider::-webkit-scrollbar{
+    display: none;
+}
+.prev, .next{
+    width: 50px;
     cursor: pointer;
-    position: absolute;
-    top: 50%; /* Centers the arrows vertically */
+    margin: 40px;
+}
+
+.slider div .rectangle:hover{
+    filter: grayscale(0);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.address{
+    background-color:  #007a87;
     width: auto;
-    padding: 16px;
-    color: black;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-
-.next {
-    right: 0; /* Positions the next arrow to the right */
-    border-radius: 3px 0 0 3px;
-}
-
-/* Positioning the arrows */
-.prev {
-    left: 0; /* Positions the previous arrow to the left */
-}
-
-/* Ensuring arrows are vertically centered */
-.prev, .next {
-    transform: translateY(-50%);
-}
-
-
-/* Hover effect for the navigation arrows */
-.prev:hover, .next:hover {
-    background-color: white;
-}
-
-.dot {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    padding: 15px;
+    gap: 10px;
+    align-items: center;
     text-align: center;
 }
-
-
-.active {
-    background-color: #717171;
+.imgfooter{
+    width: 150px;
+    height: 100px;
 }
-.slide{
+h4{
+    text-align: center;
+}
+.rectangle{
+    background: white;
+    width: 350px;
+    height: 150px;
+    margin: 5px;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 4px 8px #114B5F;
+    border-color: black ;
+}
+#content{
+    color: white;
+}
+.logo{
     display: flex;
+    gap: 5px;
+    justify-content: center;
 }
+.socmed{
+    width: 50px;
+    height: 35px;
+}
+#addinfo{
+    text-align: justify;
+}
+/* end footer */
