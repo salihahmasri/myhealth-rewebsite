@@ -231,6 +231,7 @@ h4{
 }
 #content{
     color: white;
+    text-align: justify;
 }
 .logo{
     display: flex;
@@ -245,3 +246,4 @@ h4{
     text-align: justify;
 }
 /* end footer */
+
