@@ -3,67 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MyHealth-Homepage</title>
-    <!-- Link to external CSS file for styling -->
-    <link rel="stylesheet" href="homepage.css">
-    <!-- Link to external JavaScript file for functionality -->
-    <script src="homepage.js" defer></script>
+    <title>MyHealth Ministry of Health Malaysia</title>
+    <link rel="stylesheet" href="HomePage.css">
 </head>
 <body>
     <header>
-        <!-- Navigation bar (currently empty) -->
-        <nav></nav>
-        <!-- Placeholder for additional header content (e.g., logo) -->
-        <div id="head"></div>
-    </header>
-    <p>Home</p>
-    <h1>| Home</h1>
-
-    <!-- Segment for the banner -->
-    <div id="banner">
         <div class="container">
-            <!-- First banner image -->
-            <div class="banner">
-                <div class="imageList">1/3</div>
-                <img src="https://media.springernature.com/lw685/springer-static/image/chp%3A10.1007%2F978-3-030-68120-3_6/MediaObjects/500479_1_En_6_Fig3_HTML.png
-                " alt="img1" style="width: 70%;" class="centered_image">
-            </div>
-            <!-- Second banner image -->
-            <div class="banner">
-                <div class="imageList">2/3</div>
-                <img src="" 
-                alt="img1" style="width: 100%;" class="centered_image">>
-            </div>
-            <!-- Third banner image -->
-            <div class="banner">
-                <div class="imageList">3/3</div>
-                <img src="Dengue Fever.jpg" alt="img1" style="width: 100%;" class="centered_image">>
-            </div>
-
-            <!-- Arrows for navigating through the banners -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <ul class="nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Charter</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Site Map</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
         </div>
-        <br>
+    </header>
+      
+    <div class="container">
+        <p>Home</p>
+        <h1>|Home</h1>
+        <div class="slider">
+            <img src="https://www.nea.gov.sg/images/default-source/default-album/fy21/default-album/nea-004-t21a-comms-banner_12ftw-x-4fth-r10_path-for-printing-01.jpg" alt="Slide 1" class="sld active">
+            <img src="https://www.shutterstock.com/image-vector/world-aids-day-banner-december-260nw-2069262977.jpg" alt="Slide 2" class="sld">
+            <img src="https://www.linnsheriff.org/wp-content/uploads/COVID-19-resize-banner.jpg" alt="Slide 3" class="sld">
+            <div class="sld-nav">
+                <!-- make the dot can manually and auto slide -->
+                <span class="dot active" onclick="showSlide(0)"></span>
+                <span class="dot" onclick="showSlide(1)"></span>
+                <span class="dot" onclick="showSlide(2)"></span>
+            </div>
+        </div>
 
-        <!-- Dots for indicating the current banner and for navigation -->
-        <div style="text-align: center;">
-            <span class="dot" onclick="currentBanner(1)"></span>
-            <span class="dot" onclick="currentBanner(2)"></span>
-            <span class="dot" onclick="currentBanner(3)"></span>
-            <!-- not done yet -->
+        <div class="btns">
+            <!-- button for news segment -->
+            <button onclick="showSegment('alert')" class="active">Health Alert</button>
+            <button onclick="showSegment('issue')">Current Issue</button>
+            <button onclick="showSegment('anms')">ANMS</button>
+        </div>
+
+        <!-- segment for news-->
+         <!-- alert is default -->
+        <div id="alert" class="news active">
+            <h2>Health Alert</h2>
+            <p>The latest situation of ...</p>
+        </div>
+        <div id="issue" class="news">
+            <h2>Current Issue</h2>
+            <p>Current issues are ...</p>
+        </div>
+        <div id="anms" class="news">
+            <h2>ANMS</h2>
+            <p>ANMS updates ...</p>
         </div>
     </div>
 
-    <div class="btnClass">
-        <button class="btn">Health Alert</button>
-        <button class="btn">Current Issue</button>
-        <button class="btn">ANMS</button>
-        </div>
-    </div>
-    <!-- the news -->
-    <div class="newsBox">
-        
-    </div>
+    <script src="HomePage.js"></script>
 </body>
 </html>
