@@ -131,7 +131,7 @@ main {
     display: flex;
 }
 
-.rectangle {
+.rectangle-title {
     width: 10px;
     height: 85px;
     background-color: #114B5F;
@@ -165,46 +165,168 @@ main {
 }
 
 .archive-categories {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
 }
 
-.archive-button {
-    background-color: #007a87;
-    color: white;
-    padding: 15px 30px;
+
+.archive-item {
+    position: relative;
+    padding: 10px; /* Added padding for archive items */
+}
+
+.archive-item .front-rectangle {
+    padding: 20px;
     margin: 10px;
-    text-decoration: none;
+    background-color: #114B5F;
+    color: #fff;
     border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    position: relative;
+    z-index: 1; /* Ensure front rectangle is above submenu */
+}
+
+.back-rectangle {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120%;
+    padding: 20px;
+    margin: 0;
+    background-color: #007a87;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    transition: height 0.3s;
+    z-index: 0; /* Ensure back rectangle is below submenu */
+}
+
+.archive-item:hover .back-rectangle {
     display: block;
 }
 
-.physical-health .sub-menu {
+
+.sub-menu {
     display: none;
     flex-direction: column;
-    margin-top: 10px;
+    position: absolute;
+    top: calc(100% - 10px); /* Adjusted to position above */
+    left: 0;
+    width: calc(100% - 40px); /* Adjusted width to match padding */
+    background-color: #007a87;
+    border-radius: 5px;
+    padding: 10px 20px; /* Adjusted padding for spacing */
+    margin: 0;
 }
 
-.physical-health:hover .sub-menu {
-    display: flex;
+.archive-item:hover .back-rectangle + .sub-menu,
+.sub-menu:hover {
+    display: flex; /* Show submenu when back-rectangle is hovered or when submenu itself is hovered */
 }
 
-footer {
-    background-color: #003d4d;
-    color: white;
-    padding: 20px;
+.sub-menu a {
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.sub-menu a:hover {
+    background-color: #114B5F;
+}
+
+
+/* footer start */
+.article-1{
+    background-color: #114B5F;
     text-align: center;
 }
-
-.footer-content {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.article-2{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    justify-content: center;
     flex-wrap: wrap;
+    text-align: center;
+    
+}
+.slider-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin: 10% auto; */
 }
 
-.footer-logos img, .footer-social img {
-    height: 40px;
-    margin: 10px;
+.slider {
+    width: 1000px;
+    display: flex;
+    overflow-x: scroll;
 }
+.slider div .rectangle{
+    filter: grayscale(100%);
+    transition: transform 0.5s;
+}
+.slider::-webkit-scrollbar{
+    display: none;
+}
+.prev, .next{
+    width: 50px;
+    cursor: pointer;
+    margin: 40px;
+}
+
+.slider div .rectangle:hover{
+    filter: grayscale(0);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.address{
+    background-color:  #007a87;
+    width: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    padding: 15px;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+}
+.imgfooter{
+    width: 150px;
+    height: 100px;
+}
+h4{
+    text-align: center;
+}
+.rectangle{
+    background: white;
+    width: 350px;
+    height: 150px;
+    margin: 5px;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 4px 8px #114B5F;
+    border-color: black ;
+}
+#content{
+    color: white;
+    text-align: justify;
+}
+.logo{
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+}
+.socmed{
+    width: 50px;
+    height: 35px;
+}
+#addinfo{
+    text-align: justify;
+}
+/* end footer */
