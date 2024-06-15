@@ -1,3 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background:#028090;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #3a3a3a 3px solid;
+}
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header ul {
+    padding: 0;
+    list-style: none;
+}
+
+header li {
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
 /* Styles for the main heading */
 h1 {
     font-weight: bolder;
@@ -5,74 +42,76 @@ h1 {
     font-family: sans-serif;
 }
 
-/*color and center */
-#cust{
-    align-items: center; 
-    /* center the table */
-    text-align: center;
-    background-color: #028090;
+h2{
+    font-weight: lighter;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.charter {
+    padding-bottom: 20px;
+}
+
+.charter table{
+    background-color:#028090;
+    color: white;
     border-collapse: collapse;
-    /* make the table border to a single line */
+    /* remove default spacing of border */
 }
-/* make the table column same size */
-#cust td{
+
+.charter td{
+    border:10px white solid;
+    /* size of border */
     width: 50%;
-    color: white;
-    border:solid 5px;
-    padding: 10px 10px 10px 10px;
-}
-
-/* distance everything from edge */
-body{
-    margin-left: 30px;
-    margin-right: 30px;
-}
-
-#container table{
-    background-color: #028090;
-    color: white;
-    
-}
-/* to make only month class have small size compare to other td */
-.month{
-    width: 20px;
-}
-
-#container{
-    display: flex;
-    /* make element stick together */
-    margin-top: 30-px;
-}
-
-.title{
-    background-color:#028090 ; display: block;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.title p{
-    margin: 0;
-    color: white;
-}
-
-.title button{
-    margin-left: 10px;
-}
-
-#container td{
-    padding: 10 px 10px 10 px 10px;
-    border: 5px;
-}
-#container h2{
+    /* size of data table */
+    padding: 5px 5px 5px 5px;
+    height: 50px;
     text-align: center;
-    color: white;
+    /* center the text */
 }
 
-.matter{
+.section {
     background-color:#93BAAC;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
 }
 
-.matter table{
-    margin: 20px 20px 20px 20px;
-    margin-top: 20px;
+.section button {
+    background: #028090;
+    color: #ffffff;
+    padding: 20px;
+    border: none;
+    border-radius: 15px;
+    /* smoothen the edge of container */
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    text-align: left;
+    /* align the text to left */
+}
+
+.content {
+    display: none;
+    /* display nothing at first */
+    padding: 10px;
+    background: #93BAAC;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.content table {
+    background-color: #028090;
+    width: 100%;
+    border-collapse: collapse;
+    /* non default the settings of table border */
+    color: white;
+    /* font color and make the height more big so it's pleasing to eye */
+    height:150px;
+}
+
+.content td{
+    border: 1px solid black;
+    padding: 5px 5px 5px 5px;
+    /* align all data content to center */
+    text-align: center;
 }
